@@ -1,0 +1,408 @@
+/*------------------------ 会社情報ＰＣ ----------------------------*/
+
+/* 会社情報メインコンテンツＰＣ */
+
+
+.underlayer-company-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1315px;
+    padding: 5px 40px 0;
+    padding-left: 100px;
+    margin: 0 auto 120px;
+}
+
+/* 会社情報サイドメニューＰＣ */
+
+.company-aside {
+    padding-top: 3px;
+    margin-right: clamp(40px, 7%, 80px);
+    padding-right: clamp(40px, 7%, 83px);
+    border-right: solid 1px #2A2A2A;
+}
+
+.company-aside ul {
+    position: sticky;
+    min-width: 64px;
+    top: 30px;
+    left: 0px;
+}
+
+.company-aside ul li {
+    width: fit-content;
+    height: fit-content;
+    text-align: end;
+    font-weight: bold;
+    margin-left: auto;
+    margin-right: 0;
+    margin-bottom: 29px;
+    opacity: .4;
+    transition: all .3s;
+    cursor: pointer;
+}
+
+
+
+@media (hover: hover) and (pointer: fine) {
+    .aside_menu:hover {
+        transition: all .3s;
+        opacity: 1;
+    }
+}
+
+
+
+#philosophy_li.active,
+#overview_li.active,
+#history_li.active,
+#organization_li.active,
+#map_li.active {
+    position: relative;
+    opacity: 1;
+}
+
+.aside_menu.active::after {
+    position: absolute;
+    content: '';
+    width: 40px;
+    height: 1px;
+    top: 50%;
+    left: -56px;
+    background-color: #E60012;
+}
+
+/*----- 会社情報右のメインコンテンツＰＣ -----*/
+
+.company-container {
+    width: 100%;
+    max-width: 680px;
+    margin-left: 0;
+    margin-right: auto;
+}
+
+.company-container p {
+    font-size: 1rem;
+    line-height: 28.8px;
+}
+
+/* 経営理念ＰＣ */
+
+.section-corporate-philosophy {
+    padding-top: 30px;
+    margin-top: -30px;
+    margin-bottom: 160px;
+}
+
+.corporate-philosophy_subtitle {
+    margin-top: 43px;
+    margin-bottom: 19px;
+}
+
+.corporate-philosophy_subtitle h3 {
+    font-size: 1.125rem;
+    font-weight: bold;
+    margin-bottom: 23px;
+}
+
+.corporate-philosophy_img {
+    width: 100%;
+    aspect-ratio: 680/320;
+}
+
+/* 会社概要ＰＣ */
+
+
+.section-overview {
+    padding-top: 30px;
+    margin-top: -30px;
+    margin-bottom: 159px;
+}
+
+table,
+td,
+th {
+    line-height: 26px;
+}
+
+.overview_table {
+    width: 100%;
+}
+
+.overview_table td {
+    padding: 13px 13px 13px 17px;
+    border-top: solid 1px #EFEFEF;
+}
+
+.overview_table tr:last-child td {
+    border-bottom: solid 1px #EFEFEF;
+}
+
+.overview_table td:first-child {
+    font-weight: bold;
+    min-width: 116px;
+}
+
+/* 沿革ＰＣ */
+
+.section-history {
+    padding-top: 30px;
+    margin-top: -30px;
+    margin-bottom: 160px;
+}
+
+table {
+    margin-top: 40px;
+}
+
+.history_table td {
+    padding: 21px 0;
+    border-top: solid 1px #EFEFEF;
+}
+
+.section-history .td-year {
+    width: 120px;
+    border-top: solid 1px #2A2A2A;
+}
+
+.section-history .td-ghost {
+    width: 40px;
+    border: none;
+}
+
+.td-month {
+    width: 76px;
+}
+
+.history_table td:last-child {
+    padding: 12px 0;
+}
+
+.history_table td:last-child span {
+    display: block;
+    padding: 9px 0 9px 24px;
+    border-left: solid 1px #EFEFEF;
+}
+
+.history_table tr:nth-child(3) td:nth-child(n + 1),
+.history_table tr:nth-child(5) td:nth-child(n + 1),
+.history_table tr:nth-child(6) td:nth-child(n + 1),
+.history_table tr:nth-child(10) td:nth-child(n + 1) {
+    border-top: none;
+    padding-top: 13px;
+}
+
+.history_table tr:last-child .td-year {
+    border-bottom: solid 1px #2A2A2A;
+}
+
+.history_table tr:last-child td:last-child,
+.history_table tr:last-child .td-month {
+    border-bottom: solid 1px #EFEFEF;
+}
+
+/*----- 組織図ＰＣ -----*/
+
+.section-organization {
+    padding-top: 30px;
+    margin-top: -30px;
+    margin-bottom: 160px;
+}
+
+.organization_img {
+    width: 100%;
+    margin-top: 38px;
+}
+
+.organization-sp {
+    display: none;
+}
+
+/*----- グーグルマップＰＣ -----*/
+
+.section-map {
+    padding-top: 30px;
+    margin-top: -30px;
+    margin-bottom: 9px;
+}
+
+.google-map {
+    width: 100%;
+    max-width: 680px;
+    aspect-ratio: 680/400;
+    margin-top: 40px;
+}
+
+.google-map p {
+    margin-top: 23px;
+    line-height: 0;
+}
+
+
+
+/*------------------- ＳＰサイズ -----------------------*/
+@media screen and (max-width: 768px) {
+
+    /* 会社情報メインコンテンツＳＰ */
+    .underlayer-company-container {
+        display: block;
+        max-width: 648px;
+        padding: 5px 24px 0;
+        margin-top: -80px;
+    }
+
+    .underlayer-company-container section {
+        margin-bottom: 120px;
+    }
+
+    .company-container p {
+        font-size: .875rem;
+        line-height: 25px;
+    }
+
+    /* 会社情報サイドメニューＳＰ */
+
+    .company-aside {
+        position: sticky;
+        top: 0;
+        min-height: 77px;
+        margin-right: 0;
+        padding: 15px 50px 0 0;
+        border: none;
+        background-color: #FFFFFF;
+    }
+
+    .company-aside ul {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .company-aside ul li {
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-right: 8%;
+        margin-bottom: 15px;
+    }
+
+    .company-aside ul li:last-child {
+        margin-right: 0;
+    }
+
+    .company-aside ul li.active {
+        margin-left: 0;
+        padding-left: 5px;
+        border-left: solid 5px #E60012;
+    }
+
+
+
+    .aside_menu.active::after {
+        display: none;
+    }
+
+    .company-container {
+        margin-top: 20px;
+    }
+
+    /* 経営理念ＳＰ */
+
+    .section-corporate-philosophy {
+        padding-top: 85px;
+        margin-top: -85px;
+    }
+
+    .corporate-philosophy_subtitle {
+        margin-top: 30px;
+        margin-bottom: 15px;
+    }
+
+    .corporate-philosophy_subtitle h3 {
+        font-size: 1rem;
+    }
+
+    /* 会社概要ＳＰ */
+
+    .section-overview {
+        padding-top: 85px;
+        margin-top: -85px;
+    }
+
+    table {
+        margin-top: 30px;
+        font-size: .875rem;
+    }
+
+    table,
+    td,
+    th {
+        line-height: 25px;
+    }
+
+    .overview_table td {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    .overview_table td:first-child {
+        width: 105px;
+        max-width: 105px;
+        min-width: 105px;
+    }
+
+    /* 沿革ＳＰ */
+
+    .section-history {
+        padding-top: 85px;
+        margin-top: -85px;
+    }
+
+    .section-history .td-year {
+        width: 20%;
+        min-width: 55px;
+
+    }
+
+    .section-history .td-ghost {
+        width: 3.5%;
+        min-width: 10px;
+    }
+
+    .td-month {
+        width: 9.5%;
+        min-width: 40px;
+    }
+
+    .history_table td:last-child span {
+        padding-left: 12px;
+    }
+
+    /*----- 組織図ＳＰ -----*/
+
+    .section-organization {
+        padding-top: 85px;
+        margin-top: -85px;
+    }
+
+    .organization-pc {
+        display: none;
+    }
+
+    .organization-sp {
+        display: block;
+    }
+
+    /*----- グーグルマップＳＰ -----*/
+
+    .section-map {
+        padding-top: 85px;
+        margin-top: -85px;
+    }
+
+    .google-map {
+        margin-top: 30px;
+    }
+
+    .google-map p {
+        margin-top: 10px;
+    }
+}

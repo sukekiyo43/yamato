@@ -1,0 +1,132 @@
+    /*------------------- プライバシーポリシーＰＣ -----------------------*/
+    /*--------- 全体の設定ＰＣ ----------*/
+
+    .privacy-policy-container {
+        width: 100%;
+        max-width: 800px;
+        padding: 5px 40px 0;
+        margin: 0 auto 120px;
+    }
+
+    .privacy-policy-container .section-red-title {
+        margin-bottom: 21px;
+    }
+
+    .privacy-policy-container p {
+        font-size: 1rem;
+        line-height: 28.9px;
+    }
+
+    .privacy-policy-container article {
+        margin-bottom: 51px;
+    }
+
+
+    td {
+        line-height: 32px;
+        padding: 11px 24px 10px;
+    }
+
+    td:first-child {
+        width: 40%;
+    }
+
+    td:last-child {
+        width: 60%;
+    }
+
+    /*--------- 取得する個人情報についてＰＣ ----------*/
+
+    .section-personal-information table {
+        margin-top: 24px;
+        margin-bottom: 24px;
+    }
+
+    .section-personal-information table tr {
+        border-bottom: solid 1px #707070;
+    }
+
+    .section-personal-information table tr:first-child {
+        border-bottom: none;
+    }
+
+    .section-personal-information table tr:first-child td:first-child {
+        color: #FFFFFF;
+        background-color: #3E3232;
+    }
+
+    .section-personal-information table tr:first-child td:last-child {
+        color: #FFFFFF;
+        background-color: #707070;
+    }
+
+    .section-personal-information table td:first-child {
+        background-color: #F5F5F5;
+        width: 288px;
+    }
+
+    /*--------- 個人情報の第三者提供ＰＣ ----------*/
+
+    .section-others ol,
+    .section-disclosure ol,
+    .section-privacy ol {
+        margin-top: 20px;
+    }
+
+    .section-others ol li,
+    .section-disclosure ol li,
+    .section-privacy ol li {
+        list-style: decimal;
+        list-style-position: inside;
+        margin-bottom: 5px;
+        line-height: 25px;
+    }
+
+    /*--------- お問い合わせ窓口ＰＣ ----------*/
+
+    .section-contact table {
+        border: solid 1px #707070;
+    }
+
+    .section-contact table td:first-child {
+        background-color: #F5F5F5;
+        width: 25%;
+        min-width: 130px;
+    }
+
+    .section-contact table tr:first-child {
+        border-bottom: solid 1px #707070;
+    }
+
+    .section-contact table td:first-child {
+        border-right: solid 1px #707070;
+    }
+
+    /*------------------- ＳＰサイズ -----------------------*/
+    @media screen and (max-width: 768px) {
+        .privacy-policy-container {
+            padding: 5px 24px 0;
+        }
+
+        .privacy-policy-container p,
+        table,
+        li {
+            font-size: .875rem;
+            line-height: 25px;
+        }
+
+        td {
+            padding: 10px 15px 10px;
+        }
+
+        @media screen and (max-width: 500px) {
+            table {
+                font-size: .75rem;
+            }
+
+            td {
+                padding: 5px 8px 5px;
+            }
+        }
+
+    }

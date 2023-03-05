@@ -1,0 +1,489 @@
+/*------------------- ニュースＰＣ -----------------------*/
+
+.news-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1080px;
+    padding: 0 40px;
+    margin: 125px auto 120px;
+}
+
+.news-container a {
+    transition: all .3s;
+}
+
+.news-container a:hover {
+    opacity: .7;
+    transition: all .3s;
+}
+
+/*------------------- ニュース記事ＰＣ -----------------------*/
+
+.news-container .underlayer-service-container {
+    width: 100%;
+    max-width: 640px;
+    margin-right: 20px;
+}
+
+/*- ニューストップ画像ＰＣ -*/
+
+.news-top-box {
+    margin-bottom: 42px;
+}
+
+.news-top-img {
+    width: 100%;
+    max-width: 640px;
+    aspect-ratio: 640/400;
+    margin-bottom: 20px;
+}
+
+.news-top-title {
+    font-size: 1.75rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    line-height: 28px;
+}
+
+.news-container h6 {
+    width: fit-content;
+    padding: 4px 6px;
+    font-size: .75rem;
+    background-color: #F5F5F5;
+}
+
+.news-date {
+    font-size: .75rem;
+    margin-top: 18px;
+}
+
+/*- ニュースリストＰＣ -*/
+
+.news-list-container ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.news-list-box {
+    width: 48%;
+    max-width: 300px;
+    margin-bottom: 42px;
+}
+
+.news-list-box img {
+    width: 100%;
+    max-width: 300px;
+    aspect-ratio: 300/188;
+}
+
+.news-list-box p {
+    line-height: 26px;
+    margin-top: 14px;
+    margin-bottom: 13px;
+    font-size: 1rem;
+}
+
+/*------------------- ニュース詳細ページＰＣ -----------------------*/
+
+.header-news-detail {
+    height: auto;
+    margin-bottom: 94px;
+}
+
+.news-container-detail {
+    margin-top: 0;
+}
+
+/*- ニュース詳細目次ＰＣ -*/
+
+.news-detail-contents {
+    padding: 41px 50px 26px;
+    border: solid 1px #2A2A2A;
+    margin: 0 40px 80px;
+}
+
+.news-detail-contents ul li,
+.news-detail-contents ol li {
+    margin-bottom: 13px;
+}
+
+.news-detail-nest {
+    margin-top: 8px;
+}
+
+.news-detail-contents .news-detail-nest li {
+    margin-left: 16px;
+    margin-bottom: 8px;
+    font-size: .875rem;
+    list-style-type: none;
+    font-weight: normal;
+}
+
+/*- ニュース詳細目次ＰＣ -*/
+
+.news-detail-contents {
+    font-weight: bold;
+}
+
+.news-detail-contents a:hover {
+    opacity: 1;
+}
+
+.news-detail-contents h3 {
+    text-align: center;
+    font-size: 1.125rem;
+    margin-bottom: 29px;
+}
+
+.news-detail-article h2 {
+    height: 62px;
+    line-height: 60px;
+    font-size: 1.375rem;
+    font-weight: bold;
+    margin-top: 76px;
+    margin-bottom: 36px;
+    border-top: solid 1px #E60012;
+    border-bottom: solid 1px #E60012;
+}
+
+.news-detail-article h3 {
+    font-size: 1.125rem;
+    line-height: 23px;
+    padding-left: 16px;
+    margin-top: 60px;
+    margin-bottom: 22px;
+    font-weight: bold;
+    border-left: solid 4px #E60012;
+}
+
+.news-detail-article p {
+    font-size: 1rem;
+    line-height: 28.8px;
+    margin-bottom: 24px;
+}
+
+.news-sub-list-box {
+    margin-bottom: 66px;
+}
+
+.news-sub-list-box ul {
+    margin-top: 30px;
+    margin-left: 16px;
+}
+
+.news-sub-list-box ul li {
+    position: relative;
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.news-sub-list-box ul li::before {
+    position: absolute;
+    content: '･';
+    left: -12px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.news-sub-list-box ol {
+    list-style-type: decimal;
+    list-style-position: inside;
+    margin-top: 37px;
+}
+
+.news-sub-list-box ol li {
+    margin-bottom: 10px;
+}
+
+/*- ニュース記事ページネーションＰＣ -*/
+
+.news-PaginationBox {
+    display: flex;
+    justify-content: center;
+}
+
+.left-arrow,
+.right-arrow {
+    width: 13px;
+    height: 26px;
+    align-self: center;
+}
+
+.news-Pagination-NumberBox {
+    display: flex;
+    align-items: center;
+}
+
+.news-Pagination-NumberBox li {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    margin-right: 16px;
+    background-color: #FFFFFF;
+    border: solid 1px #CCCCCC;
+}
+
+.news-Pagination-NumberBox li:first-child {
+    margin-left: 24px;
+    color: #FFFFFF;
+    background-color: #2A2A2A;
+}
+
+.news-Pagination-NumberBox li:last-child {
+    margin-right: 24px;
+}
+
+.news-Pagination-NumberBox li a {
+    display: block;
+    width: 100%;
+    line-height: 29px;
+}
+
+/*------------------- ニュースサイドバーＰＣ -----------------------*/
+
+.news-sidebar {
+    width: 42%;
+    max-width: 300px;
+    min-width: 200px;
+}
+
+.news-sidebar h6 {
+    margin-right: 4px;
+    margin-bottom: 8px;
+}
+
+.news-pickup {
+    margin-bottom: 55px;
+}
+
+.news-sidebar h3 {
+    padding-top: 3px;
+    margin-bottom: 50px;
+    font-size: 1.125rem;
+    font-weight: bold;
+}
+
+.news-sidebar h4 {
+    max-width: 184px;
+    font-size: .875rem;
+    line-height: 22px;
+    margin-top: 2px;
+    margin-left: 10px;
+}
+
+.news-sidebar img {
+    width: 100px;
+    height: 70px;
+}
+
+.news-pickup ul li {
+    padding-bottom: 24px;
+    margin-bottom: 23px;
+    border-bottom: solid 1px #CCCCCC;
+}
+
+.news-pickup ul li a {
+    display: flex;
+    justify-content: space-between;
+}
+
+.news-category {
+    margin-bottom: 40px;
+}
+
+.news-category h3 {
+    margin-bottom: 26px;
+}
+
+.news-category ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.news-tag {
+    padding-right: 10px;
+    margin-bottom: 27px;
+}
+
+.news-tag h3 {
+    margin-bottom: 26px;
+}
+
+.news-tag ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.news-sidebar form {
+    position: relative;
+}
+
+.news-sidebar input {
+    width: 100%;
+    border: none;
+    border-bottom: solid 1px #CCCCCC;
+}
+
+input[type="text" i] {
+    padding: 9px;
+    padding-left: 8px;
+}
+
+input::placeholder {
+    font-size: 1rem;
+    font-family: "Yu Gothic", "游ゴシック", "YuGothic", "游ゴシック体", sans-serif;
+    color: #757575;
+}
+
+.news-button {
+    position: absolute;
+    display: block;
+    top: 5px;
+    right: 5px;
+    width: 24px;
+    height: 24px;
+    border: none;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.news-button img {
+    width: 24px;
+    height: 24px;
+}
+
+/*------------------- ＳＰサイズ -----------------------*/
+@media screen and (max-width: 768px) {
+
+    /*------------------- ニュースＳＰ -----------------------*/
+
+    .news-container {
+        flex-direction: column;
+        max-width: 648px;
+        padding: 0 24px;
+        margin-top: 0;
+    }
+
+    /*------------------- ニュース記事ＳＰ -----------------------*/
+
+    .news-container .underlayer-service-container {
+        margin-right: 0;
+        margin-bottom: 120px;
+    }
+
+    /*- ニューストップ画像ＳＰ -*/
+
+    .news-top-title {
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+    }
+
+    .news-date {
+        margin-top: 12px;
+    }
+
+    /*- ニュースリストＳＰ -*/
+
+    .news-list-box {
+        margin-bottom: 30px;
+    }
+
+    .news-list-box p {
+        font-size: .875rem;
+        line-height: 25px;
+        margin: 10px 0;
+    }
+
+    /*------------------- ニュース詳細ページＳＰ -----------------------*/
+
+    /*- ニュース詳細目次ＳＰ -*/
+
+    .news-detail-contents {
+        font-size: .9375rem;
+        padding: 30px 30px 15px;
+        border: solid 1px #2A2A2A;
+        margin: 0 20px 60px;
+    }
+
+    .news-detail-article p {
+        font-size: .875rem;
+        line-height: 25px;
+    }
+
+    /*- ニュース詳細目次ＳＰ -*/
+
+    .news-detail-article h2 {
+        font-size: 1.25rem;
+        margin-top: 60px;
+        margin-bottom: 30px;
+    }
+
+    .news-detail-article h3 {
+        margin-top: 40px;
+    }
+
+    .news-sub-list-box {
+        margin-bottom: 50px;
+    }
+
+    .news-sub-list-box ul li,
+    .news-sub-list-box ol li {
+        font-size: .875rem;
+        line-height: 25px;
+    }
+
+
+    /*------------------- ニュースサイドバーＳＰ -----------------------*/
+
+    .news-sidebar {
+        width: 100%;
+        max-width: initial;
+    }
+
+    .news-sidebar h3 {
+        font-size: 1rem;
+        margin-bottom: 25px;
+    }
+
+    .news-sidebar h4 {
+        font-size: .75rem;
+    }
+
+    .news-pickup ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .news-pickup ul li {
+        width: 48%;
+    }
+
+    .news-pickup {
+        margin-bottom: 30px;
+    }
+
+    @media screen and (max-width:500px) {
+
+        .news-list-container ul {
+            justify-content: center;
+        }
+
+        .news-list-box {
+            width: 100%;
+        }
+
+        .news-sidebar {
+            max-width: 300px;
+            margin: 0 auto;
+        }
+
+        .news-pickup ul li {
+            width: 100%;
+        }
+    }
+}

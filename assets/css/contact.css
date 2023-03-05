@@ -1,0 +1,172 @@
+/*------------------- お問い合わせフォームＰＣ -----------------------*/
+
+.contact-container {
+    width: 100%;
+    max-width: 800px;
+    padding: 3px 40px 0;
+    margin: 0 auto 120px;
+}
+
+.contact-container p {
+    font-size: 1rem;
+}
+
+.contact-container h4 {
+    font-weight: bold;
+    font-size: .9375rem;
+}
+
+/*- お問い合わせ項目 -*/
+
+.radio-box {
+    display: flex;
+    flex-direction: column;
+    margin-top: 48px;
+    margin-bottom: 31px;
+}
+
+.radio-box h4 {
+    margin-bottom: 13px;
+}
+
+input[type=radio] {
+    display: none;
+    appearance: none;
+}
+
+input[type=text]::placeholder,
+textarea::placeholder {
+    color: #757575;
+}
+
+.radio-box label {
+    position: relative;
+    padding-left: 28px;
+    margin-bottom: 13px;
+}
+
+.radio-span-box {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: -10%;
+    width: 20px;
+    height: 20px;
+    border: solid 1px #000000;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: all .3s;
+}
+
+.radio-box .radio-span {
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: solid 4px #FFFFFF;
+}
+
+input[type=radio]:checked+.radio-span-box {
+    background-color: #0175fd;
+    border: solid 1px #0175fd;
+    transition: all .3s;
+}
+
+input[type=text] {
+    display: block;
+    font-size: 1rem;
+    width: 100%;
+    padding-left: 8px;
+    margin-top: 7px;
+    padding-bottom: 0;
+    margin-bottom: 42px;
+    border: none;
+    border-bottom: solid 1px #CCCCCC;
+    font-family: "Yu Gothic", "游ゴシック", "YuGothic", "游ゴシック体", sans-serif;
+}
+
+.name input[type=text] {
+    margin-bottom: 41px;
+}
+
+textarea {
+    width: 100%;
+    min-height: 226px;
+    margin-top: 6px;
+    padding-top: 5px;
+    padding-left: 7px;
+    padding-right: 7px;
+    font-size: 1rem;
+    font-family: "Yu Gothic", "游ゴシック", "YuGothic", "游ゴシック体", sans-serif;
+    border: solid 1px #CCCCCC;
+}
+
+textarea::-webkit-resizer {
+    display: none;
+}
+
+.attention {
+    margin-top: 35px;
+    text-align: center;
+}
+
+.attention a {
+    border-bottom: solid 1px #2A2A2A;
+    transition: all .3s;
+}
+
+.attention a:hover {
+    color: #E60012;
+    border-bottom: solid 1px #E60012;
+    transition: all .3s;
+}
+
+.button input {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    height: 80px;
+    line-height: 80px;
+    margin: 46px auto 120px;
+    font-size: 1rem;
+    font-weight: bold;
+    padding-left: 8px;
+    letter-spacing: 1px;
+    border: none;
+    color: #FFFFFF;
+    background-color: #E60012;
+    cursor: pointer;
+    transition: all .3s;
+    border: solid 1px #E60012;
+}
+
+.button input:hover {
+    color: #E60012;
+    background-color: #FFFFFF;
+}
+
+/*------------------- ＳＰサイズ -----------------------*/
+@media screen and (max-width: 768px) {
+
+    .contact-container p,
+    .radio-box,
+    input[type=text],
+    textarea,
+    .attention {
+        font-size: .875rem;
+    }
+
+    .radio-box {
+        margin-top: 35px;
+    }
+
+    .attention {
+        margin-top: 20px;
+    }
+
+    .button button {
+        margin-top: 30px;
+    }
+}

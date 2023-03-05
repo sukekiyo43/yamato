@@ -1,0 +1,854 @@
+/*------------------- ヘッダーＰＣ -----------------------*/
+
+.header_background {
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    bottom: 0;
+    margin: 0;
+    z-index: -1;
+    animation: kv 1.5s linear forwards;
+}
+
+.mv-sp {
+    display: none;
+}
+
+@keyframes kv {
+    0% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.header_background img {
+    object-fit: cover;
+    aspect-ratio: 1400/500;
+}
+
+.header_main-title-inner {
+    width: 65.3%;
+    max-width: 915px;
+    margin: 12px auto 0;
+}
+
+.header_main-title {
+    font-size: 3rem;
+    writing-mode: vertical-rl;
+    line-height: 64.5px;
+    letter-spacing: 5px;
+    opacity: 0;
+    animation: logoanime 1.5s linear forwards;
+    filter: drop-shadow(1px 1px 3px #FFFFFF);
+
+}
+
+@keyframes logoanime {
+    0% {
+        transform: translateX(10px);
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+/*------------------- メインコンテンツＰＣ -----------------------*/
+
+/*------------------- お知らせＰＣ -----------------------*/
+
+.section-news {
+    position: relative;
+}
+
+.news-box {
+    position: absolute;
+    top: -499px;
+    right: 0;
+    width: 100%;
+    max-width: 640px;
+    background-color: #FFFFFF;
+}
+
+@media screen and (min-width: 1401px) {
+    .news-box {
+        right: calc(50% - 700px);
+    }
+}
+
+.news-box_inner {
+    padding: 43px 40px 40px;
+    margin-bottom: 12px;
+}
+
+.news-textbox {
+    margin-top: 31px;
+}
+
+.news-textbox ul {
+    display: flex;
+    font-size: .875rem;
+}
+
+.news-textbox ul li {
+    line-height: 22px;
+    margin-bottom: 14px;
+}
+
+.news-textbox .news-category {
+    min-width: 56px;
+    height: 18px;
+    line-height: 18px;
+    margin-left: 11px;
+    margin-right: 23px;
+    font-size: .6875rem;
+    margin-top: 2px;
+    color: #FFFFFF;
+}
+
+.news-textbox .news-category span {
+    text-align: left;
+    padding: 2px;
+    padding: 2px 6px;
+    background-color: #2A2A2A;
+}
+
+/*------------------- 会社情報ＰＣ -----------------------*/
+
+.section-company {
+    width: 100%;
+    max-width: 1080px;
+    padding: 0 40px;
+    margin: 379px auto 126px;
+}
+
+.company_title-box {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto 53px;
+}
+
+.section-company .section-title-v {
+    margin-right: 30px;
+}
+
+.company_title-imgbox {
+    display: flex;
+    align-items: end;
+    width: 100%;
+    max-width: 800px;
+    aspect-ratio: 800/400;
+    background-image: url(../img/indexpc/company-img-pc.jpg);
+    background-size: cover;
+}
+
+.company_title-imgbox .section-button {
+    margin-left: 0;
+}
+
+.section-company_text {
+    width: 100%;
+    max-width: 630px;
+}
+
+/*------------------- 事業内容ＰＣ -----------------------*/
+
+.section-service {
+    margin-bottom: 116px;
+}
+
+.service_title-box {
+    position: relative;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1080px;
+    padding: 0 40px;
+    margin: 0 auto 160px;
+}
+
+.section-service .section-title {
+    width: fit-content;
+    right: 162px;
+    margin-left: 7.7%;
+    margin-right: auto;
+}
+
+.section-service .section-title_h3::after {
+    height: 120px;
+    top: -142px;
+    left: 46px;
+}
+
+.service_title-img {
+    position: absolute;
+    width: 280px;
+    height: 180px;
+    right: 40px;
+    max-width: 280px;
+    aspect-ratio: 280/180;
+    margin-top: min(3vw, 37px);
+}
+
+.section-service .section_text-box {
+    width: 66%;
+}
+
+.section-service .section_text-title {
+    width: 42%;
+    max-width: 266px;
+    margin-right: 10px;
+}
+
+.service_text-img1 {
+    width: 60%;
+    max-width: 340px;
+    aspect-ratio: 340/340;
+}
+
+.service_text-img2 {
+    position: absolute;
+    width: 37%;
+    max-width: 380px;
+    aspect-ratio: 380/280;
+    left: 40px;
+    bottom: -179px;
+}
+
+.service_text-img2 img {
+    object-fit: cover;
+}
+
+/*- 建設事例とスワイパーＰＣ -*/
+
+.swiper-container-parent {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.swiper-container_titlebox {
+    width: 100%;
+    max-width: 1080px;
+    padding: 0 40px;
+    margin: 0 auto 28px;
+}
+
+.swiper-container-parent .section_text-title {
+    width: 100%;
+    max-width: 1000px;
+    padding-left: 429px;
+    padding-left: min(45%, 429px);
+    margin-left: auto;
+    margin-right: 0;
+}
+
+#swiper {
+    width: 100%;
+    margin-bottom: 24px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    width: 3.215%;
+    height: 17.18%;
+    min-width: 45px;
+    min-height: 45px;
+    left: 0;
+    background-color: rgba(0, 0, 0, .6);
+    background-image: url(../img/indexpc/left-arrow.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 25%;
+}
+
+@media screen and (max-width: 1100px) {
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        max-width: 45px;
+        max-height: 45px;
+    }
+}
+
+.swiper-button-next {
+    background-image: url(../img/indexpc/right-arrow.svg);
+    left: auto;
+    right: 0;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+    content: '';
+}
+
+.swiper_button-box {
+    width: 100%;
+    max-width: 1080px;
+    padding: 0 40px;
+    margin: 0 auto;
+}
+
+.swiper-container-parent .section-button {
+    margin-left: 0;
+    margin-right: auto;
+}
+
+/*------------------- 採用情報ＰＣ -----------------------*/
+
+.section-recruit {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    max-width: 1080px;
+    padding: 0 40px;
+    margin: 0 auto 120px;
+}
+
+.recruit_img1 {
+    position: absolute;
+    bottom: 213px;
+    left: 40px;
+    width: 300px;
+    height: 440px;
+}
+
+.recruit-title-box {
+    position: relative;
+    width: 620px;
+    height: 388px;
+    background-image: url(../img/indexpc/recruit-1.png);
+    background-repeat: no-repeat;
+}
+
+.recruit-title-box .section-title-v {
+    position: absolute;
+    right: -1px;
+    top: -1px;
+    width: 102px;
+    height: 214px;
+    padding: 4px;
+    margin-left: auto;
+    margin-right: 0;
+    text-align: center;
+    background-color: #FFFFFF;
+}
+
+.recruit-title-box .section-title-v .section-title_h2-v {
+    margin-top: 26px;
+}
+
+.recruit-title-box .section-title-v .section-title_h3-v {
+    margin-top: 21px;
+}
+
+.recruit-text-container {
+    display: flex;
+    width: 620px;
+    margin-top: 92px;
+}
+
+.recruit-text_img {
+    width: 310px;
+    height: 413px;
+}
+
+.recruit-text_img-sp {
+    display: none;
+}
+
+.recruit-text-box {
+    width: 266px;
+    margin-top: 3px;
+    margin-left: 31px;
+}
+
+.recruit-text-box p {
+    line-height: 21.5px;
+    margin-bottom: 240px;
+}
+
+.recruit-text-box .section-button {
+    margin-left: initial;
+    padding-left: 23px;
+}
+
+.recruit-text-box .section-button::after {
+    width: 16px;
+    height: 16px;
+    top: 37%;
+    right: 26px;
+    background-color: initial;
+    background-image: url(../img/indexpc/recruit-button-icon.svg);
+    background-repeat: no-repeat;
+}
+
+.recruit-text-box .section-button:hover:after {
+    transition: all .5s;
+    background-image: url(../img/indexpc/recruit-button-icon-red.svg);
+}
+
+/*------------------- お問い合わせＰＣ -----------------------*/
+
+.section-contact {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 513px;
+    margin-bottom: 120px;
+}
+
+.contact-gray {
+    position: relative;
+    width: 46.5vw;
+    width: 50vw;
+    background-color: #F5F5F5;
+}
+
+.contact-gray::after {
+    position: absolute;
+    content: '';
+    background-image: url(../img/indexpc/trapezoid.svg);
+    background-repeat: no-repeat;
+    width: 119px;
+    height: 100%;
+    background-color: #FFFFFF;
+    right: -69px;
+    border-left: solid 5px #F5F5F5;
+}
+
+.contact-white {
+    background-color: #FFFFFF;
+}
+
+.contact-container {
+    position: absolute;
+    width: 100%;
+    padding: 0 40px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+}
+
+.contact-box {
+    display: flex;
+    width: 100%;
+    max-width: 1000px;
+    height: 273px;
+    background-color: #FFFFFF;
+    padding: 40px;
+    margin: 0 auto;
+}
+
+.contact-tel,
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px;
+    width: 50%;
+    height: 193px;
+    border-right: solid 1px #E60012;
+}
+
+.contact-tel a {
+    transition: all .3s;
+}
+
+.contact-tel a:hover {
+    color: #E60012;
+    transition: all .3s;
+}
+
+.contact-form {
+    border-right: none;
+}
+
+.contact-tel h3 {
+    text-align: center;
+    font-size: 1.125rem;
+    font-weight: bold;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    padding-right: 39px;
+}
+
+.contact-tel div {
+    text-align: center;
+    padding-right: 39px;
+    font-size: 2.75rem;
+    font-weight: bold;
+    margin-bottom: 11px;
+}
+
+.contact-tel p {
+    text-align: center;
+    padding-right: 38px;
+    margin-bottom: 27px;
+}
+
+@media screen and (max-width: 899px) {
+    .contact-tel div {
+        width: 324px;
+    }
+
+    .contact-tel p {
+        margin-bottom: 12px;
+    }
+}
+
+.contact-form h3 {
+    padding-left: 42px;
+    font-size: 1.125rem;
+    font-weight: bold;
+}
+
+.contact-form .section-button {
+    margin-top: 10px;
+    margin-right: auto;
+    margin-left: 40px;
+    margin-bottom: 45px;
+    letter-spacing: 0;
+    padding-left: 0;
+    text-align: center;
+}
+
+.contact-form .section-button::after {
+    display: none;
+}
+
+
+
+/*------------------- ＳＰサイズ -----------------------*/
+@media screen and (max-width: 768px) {
+
+    /*------------------- ヘッダーＳＰ -----------------------*/
+
+    .header_background {
+        height: 433px;
+        bottom: 24px;
+    }
+
+    .mv-pc {
+        display: none;
+    }
+
+    .header-index .mv-sp {
+        display: block;
+        height: 100%;
+    }
+
+    .header_background img {
+        aspect-ratio: 375/433;
+    }
+
+    .header_main-title-inner {
+        width: 100%;
+        margin-top: 67px;
+    }
+
+    .header_main-title {
+        font-size: 2rem;
+        line-height: 39px;
+        margin-left: 31px;
+        letter-spacing: 3.3px;
+    }
+
+    /*------------------- お知らせＳＰ -----------------------*/
+
+    .section-news {
+        width: 100%;
+        max-width: 648px;
+        margin: 0 auto;
+    }
+
+    .news-box {
+        position: static;
+        max-width: 648px;
+        margin-left: auto;
+        margin-right: 0;
+    }
+
+    .news-box_inner {
+        margin-bottom: 0;
+        padding: 28px 24px 2px;
+    }
+
+    .news-textbox ul {
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+    }
+
+    .news-textbox ul li {
+        margin-bottom: 0;
+    }
+
+    .news-textbox {
+        margin-top: 34px;
+    }
+
+    .news-textbox .news-category {
+        width: calc(85% - 70px);
+        flex-grow: 1;
+    }
+
+    /*------------------- 会社情報ＳＰ -----------------------*/
+
+    .section-company {
+        max-width: 648px;
+        margin-top: 80px;
+        margin-bottom: 156px;
+        padding: 0 24px;
+    }
+
+    .company_title-box {
+        margin-bottom: 37px;
+    }
+
+    .section-company .section-title-v {
+        margin-right: 22px;
+    }
+
+    .company_title-imgbox {
+        aspect-ratio: 253/292;
+        background-image: url(../img/indexsp/company-img-sp.png);
+    }
+
+    /*------------------- 事業内容ＳＰ -----------------------*/
+
+    .section-service {
+        margin-bottom: 120px;
+    }
+
+    .section-service p {
+        line-height: 21.9px;
+    }
+
+    .service_title-box {
+        display: block;
+        max-width: 648px;
+        padding: 0 24px;
+        margin-bottom: 59px;
+    }
+
+    .section-service .section-title {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .section-service .section-title_h3::after {
+        height: 80px;
+        top: -99px;
+        left: 34px;
+    }
+
+    .service_title-img {
+        position: static;
+        width: 100%;
+        max-width: initial;
+        height: auto;
+        aspect-ratio: 327/210;
+        margin-top: 33px;
+    }
+
+    .section-service .section_text-box {
+        width: 100%;
+    }
+
+    .section_text-box {
+        display: block;
+        margin-top: 51px;
+    }
+
+    .section-service .section_text-title {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .service_text-img1 {
+        width: 100%;
+        max-width: 100%;
+        margin-top: 21px;
+        margin-bottom: 24px;
+        aspect-ratio: 327/327;
+    }
+
+    .service_text-img2 {
+        position: static;
+        width: 100%;
+        max-width: 100%;
+        aspect-ratio: 327/241;
+    }
+
+    /*- 建設事例とスワイパーＳＰ -*/
+
+    .swiper-container_titlebox {
+        max-width: 648px;
+        padding: 0 24px;
+        margin-bottom: 30px;
+    }
+
+    .swiper-container-parent .section_text-title {
+        padding-left: 0;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        top: 50.6%;
+        width: 40px;
+        height: 40px;
+        max-width: 40px;
+        min-width: 40px;
+        max-height: 40px;
+        min-height: 40px;
+    }
+
+    .swiper_button-box {
+        max-width: 648px;
+        padding: 0 24px;
+    }
+
+    /*------------------- 採用情報ＳＰ -----------------------*/
+
+    .section-recruit {
+        display: block;
+        max-width: 648px;
+        padding: 0 24px;
+        margin-bottom: 80px;
+    }
+
+    .recruit-title-box {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 327/204;
+        background-size: cover;
+    }
+
+    .recruit-title-box .section-title-v {
+        width: 79px;
+        height: 177px;
+        padding: 3px;
+    }
+
+    .recruit_img1 {
+        display: none;
+    }
+
+    .recruit-text-container {
+        display: block;
+        width: 100%;
+        margin-top: 40px;
+    }
+
+    .recruit-text_img {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 327/346;
+    }
+
+    .recruit-text_img-pc {
+        display: none;
+    }
+
+    .recruit-text_img-sp {
+        display: block;
+    }
+
+    .recruit-text-box {
+        width: 100%;
+        margin-top: 19px;
+        margin-left: 0;
+    }
+
+    .recruit-text-box p {
+        margin-bottom: 15px;
+    }
+
+    .recruit-text-box .section-button {
+        width: 228px;
+        height: 64px;
+        line-height: 63px;
+    }
+
+    /*------------------- お問い合わせＳＰ -----------------------*/
+
+    .section-contact {
+        height: 100%;
+        min-height: 420px;
+        margin-bottom: 56px;
+    }
+
+    .contact-gray {
+        width: 100%;
+    }
+
+    .contact-gray::after {
+        display: none;
+    }
+
+    .contact-white {
+        display: none;
+    }
+
+    .contact-container {
+        padding: 24px;
+    }
+
+    .contact-box {
+        height: 100%;
+        flex-direction: column;
+        padding: 24px;
+        max-width: 600px;
+        min-height: 324px;
+    }
+
+    .contact-tel,
+    .contact-form {
+        width: 100%;
+        height: auto;
+        padding: 0;
+        border-right: none;
+        border-bottom: solid 1px #E60012;
+    }
+
+    .contact-form {
+        border-bottom: none;
+    }
+
+    .contact-tel h3 {
+        font-size: 1rem;
+        padding-right: 0;
+        margin-top: 27px;
+    }
+
+    .contact-tel div {
+        font-size: 1.75rem;
+        padding-right: 0;
+        margin-bottom: 8px;
+    }
+
+    .contact-tel p {
+        padding-right: 0;
+        margin-bottom: 19px;
+    }
+
+    .contact-form h3 {
+        margin-top: 27px;
+        margin-bottom: 10px;
+        padding-left: 0;
+        font-size: 1rem;
+    }
+
+    .contact-form .section-button {
+        margin: auto;
+    }
+}
