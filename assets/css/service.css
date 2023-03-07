@@ -17,7 +17,7 @@
 .section-residence .service-kv-img {
     width: 100%;
     height: 400px;
-    background-image: url(../img/servicepc/public-pc.png);
+    background-image: url(../img/servicepc/public-pc.jpg);
     background-position: center center;
 }
 
@@ -87,18 +87,13 @@
 }
 
 .service-InformationBox {
-    margin-top: 26px;
+    margin-top: 20px;
     margin-left: 24px;
-}
-
-.service-date {
-    margin-bottom: 5px;
-    font-size: .875rem;
 }
 
 .service-InformationBox h4 {
     font-weight: bold;
-    margin-bottom: 24px;
+    margin-bottom: 15px;
 }
 
 .service-InformationBox p {

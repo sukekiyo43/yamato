@@ -323,7 +323,7 @@
     position: relative;
     width: 620px;
     height: 388px;
-    background-image: url(../img/indexpc/recruit-1.png);
+    background-image: url(../img/indexpc/recruit-1.jpg);
     background-repeat: no-repeat;
 }
 
@@ -398,33 +398,10 @@
 
 .section-contact {
     position: relative;
-    display: flex;
     width: 100%;
     height: 513px;
     margin-bottom: 120px;
-}
-
-.contact-gray {
-    position: relative;
-    width: 46.5vw;
-    width: 50vw;
-    background-color: #F5F5F5;
-}
-
-.contact-gray::after {
-    position: absolute;
-    content: '';
-    background-image: url(../img/indexpc/trapezoid.svg);
-    background-repeat: no-repeat;
-    width: 119px;
-    height: 100%;
-    background-color: #FFFFFF;
-    right: -69px;
-    border-left: solid 5px #F5F5F5;
-}
-
-.contact-white {
-    background-color: #FFFFFF;
+    background: linear-gradient(75deg, #E60012 0%, #E60012 50%, #fff 50%, #fff 100%);
 }
 
 .contact-container {
