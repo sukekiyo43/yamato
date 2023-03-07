@@ -270,7 +270,8 @@ header {
 }
 
 .logo {
-    width: fit-content;
+    width: 100%;
+    max-width: 166px;
     height: 35px;
 }
 

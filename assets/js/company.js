@@ -20,16 +20,16 @@ document.addEventListener("scroll", function () {
         if (window.pageYOffset <= 999) {
             philosophy();
         }
-        if (window.pageYOffset >= 1000 && window.pageYOffset <= 1699) {
+        if (window.pageYOffset >= 1000 && window.pageYOffset <= 1599) {
             overview();
         }
-        if (window.pageYOffset >= 1700 && window.pageYOffset <= 2999) {
+        if (window.pageYOffset >= 1600 && window.pageYOffset <= 2599) {
             history();
         }
-        if (window.pageYOffset >= 3000 && window.pageYOffset <= 3999) {
+        if (window.pageYOffset >= 2600 && window.pageYOffset <= 3699) {
             organization();
         }
-        if (window.pageYOffset >= 4000) {
+        if (window.pageYOffset >= 3700) {
             map();
         }
     } else if (window.matchMedia('(min-width:769px)').matches) { //PC処理
@@ -39,13 +39,13 @@ document.addEventListener("scroll", function () {
         if (window.pageYOffset >= 1400 && window.pageYOffset <= 1799) {
             overview();
         }
-        if (window.pageYOffset >= 1800 && window.pageYOffset <= 3399) {
+        if (window.pageYOffset >= 1800 && window.pageYOffset <= 3099) {
             history();
         }
-        if (window.pageYOffset >= 3400 && window.pageYOffset <= 4199) {
+        if (window.pageYOffset >= 3100 && window.pageYOffset <= 3799) {
             organization();
         }
-        if (window.pageYOffset >= 4200) {
+        if (window.pageYOffset >= 3800) {
             map();
         }
     }

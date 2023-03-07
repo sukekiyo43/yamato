@@ -270,6 +270,7 @@ table {
         padding: 15px 50px 0 0;
         border: none;
         background-color: #FFFFFF;
+        outline: solid 1px #FFFFFF;
     }
 
     .company-aside ul {

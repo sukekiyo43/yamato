@@ -371,7 +371,7 @@
 
 .recruit-text-box p {
     line-height: 21.5px;
-    margin-bottom: 240px;
+    margin-bottom: 255px;
 }
 
 .recruit-text-box .section-button {
@@ -387,6 +387,7 @@
     background-color: initial;
     background-image: url(../img/indexpc/recruit-button-icon.svg);
     background-repeat: no-repeat;
+    transition: all .5s;
 }
 
 .recruit-text-box .section-button:hover:after {
