@@ -45,7 +45,7 @@
 
 
 @media (hover: hover) and (pointer: fine) {
-    .aside_menu:hover {
+    .aside-menu:hover {
         transition: all .3s;
         opacity: 1;
     }
@@ -62,7 +62,7 @@
     opacity: 1;
 }
 
-.aside_menu.active::after {
+.aside-menu.active::after {
     position: absolute;
     content: '';
     width: 40px;
@@ -94,18 +94,18 @@
     margin-bottom: 160px;
 }
 
-.corporate-philosophy_subtitle {
+.corporate-philosophy-subtitle {
     margin-top: 43px;
     margin-bottom: 19px;
 }
 
-.corporate-philosophy_subtitle h3 {
+.corporate-philosophy-subtitle h3 {
     font-size: 1.125rem;
     font-weight: bold;
     margin-bottom: 23px;
 }
 
-.corporate-philosophy_img {
+.corporate-philosophy-img {
     width: 100%;
     aspect-ratio: 680/320;
 }
@@ -125,20 +125,20 @@ th {
     line-height: 26px;
 }
 
-.overview_table {
+.overview-table {
     width: 100%;
 }
 
-.overview_table td {
+.overview-table td {
     padding: 13px 13px 13px 17px;
     border-top: solid 1px #EFEFEF;
 }
 
-.overview_table tr:last-child td {
+.overview-table tr:last-child td {
     border-bottom: solid 1px #EFEFEF;
 }
 
-.overview_table td:first-child {
+.overview-table td:first-child {
     font-weight: bold;
     min-width: 116px;
 }
@@ -155,7 +155,7 @@ table {
     margin-top: 40px;
 }
 
-.history_table td {
+.history-table td {
     padding: 21px 0;
     border-top: solid 1px #EFEFEF;
 }
@@ -174,30 +174,30 @@ table {
     width: 76px;
 }
 
-.history_table td:last-child {
+.history-table td:last-child {
     padding: 12px 0;
 }
 
-.history_table td:last-child span {
+.history-table td:last-child span {
     display: block;
     padding: 9px 0 9px 24px;
     border-left: solid 1px #EFEFEF;
 }
 
-.history_table tr:nth-child(3) td:nth-child(n + 1),
-.history_table tr:nth-child(5) td:nth-child(n + 1),
-.history_table tr:nth-child(6) td:nth-child(n + 1),
-.history_table tr:nth-child(10) td:nth-child(n + 1) {
+.history-table tr:nth-child(3) td:nth-child(n + 1),
+.history-table tr:nth-child(5) td:nth-child(n + 1),
+.history-table tr:nth-child(6) td:nth-child(n + 1),
+.history-table tr:nth-child(10) td:nth-child(n + 1) {
     border-top: none;
     padding-top: 13px;
 }
 
-.history_table tr:last-child .td-year {
+.history-table tr:last-child .td-year {
     border-bottom: solid 1px #2A2A2A;
 }
 
-.history_table tr:last-child td:last-child,
-.history_table tr:last-child .td-month {
+.history-table tr:last-child td:last-child,
+.history-table tr:last-child .td-month {
     border-bottom: solid 1px #EFEFEF;
 }
 
@@ -209,7 +209,7 @@ table {
     margin-bottom: 160px;
 }
 
-.organization_img {
+.organization-img {
     width: 100%;
     margin-top: 38px;
 }
@@ -297,7 +297,7 @@ table {
 
 
 
-    .aside_menu.active::after {
+    .aside-menu.active::after {
         display: none;
     }
 
@@ -312,12 +312,12 @@ table {
         margin-top: -85px;
     }
 
-    .corporate-philosophy_subtitle {
+    .corporate-philosophy-subtitle {
         margin-top: 30px;
         margin-bottom: 15px;
     }
 
-    .corporate-philosophy_subtitle h3 {
+    .corporate-philosophy-subtitle h3 {
         font-size: 1rem;
     }
 
@@ -339,12 +339,12 @@ table {
         line-height: 25px;
     }
 
-    .overview_table td {
+    .overview-table td {
         padding-left: 8px;
         padding-right: 8px;
     }
 
-    .overview_table td:first-child {
+    .overview-table td:first-child {
         width: 105px;
         max-width: 105px;
         min-width: 105px;
@@ -373,7 +373,7 @@ table {
         min-width: 40px;
     }
 
-    .history_table td:last-child span {
+    .history-table td:last-child span {
         padding-left: 12px;
     }
 

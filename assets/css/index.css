@@ -1,6 +1,6 @@
 /*------------------- ヘッダーＰＣ -----------------------*/
 
-.header_background {
+.header-background {
     position: absolute;
     width: 100%;
     height: 500px;
@@ -24,18 +24,18 @@
     }
 }
 
-.header_background img {
+.header-background img {
     object-fit: cover;
     aspect-ratio: 1400/500;
 }
 
-.header_main-title-inner {
+.header-main-title-inner {
     width: 65.3%;
     max-width: 915px;
     margin: 12px auto 0;
 }
 
-.header_main-title {
+.header-main-title {
     font-size: 3rem;
     writing-mode: vertical-rl;
     line-height: 64.5px;
@@ -80,7 +80,7 @@
     }
 }
 
-.news-box_inner {
+.news-box-inner {
     padding: 43px 40px 40px;
     margin-bottom: 12px;
 }
@@ -126,7 +126,7 @@
     margin: 379px auto 126px;
 }
 
-.company_title-box {
+.company-title-box {
     display: flex;
     justify-content: space-between;
     margin: 0 auto 53px;
@@ -136,7 +136,7 @@
     margin-right: 30px;
 }
 
-.company_title-imgbox {
+.company-title-imgbox {
     display: flex;
     align-items: end;
     width: 100%;
@@ -146,11 +146,11 @@
     background-size: cover;
 }
 
-.company_title-imgbox .section-button {
+.company-title-imgbox .section-button {
     margin-left: 0;
 }
 
-.section-company_text {
+.section-company-text {
     width: 100%;
     max-width: 630px;
 }
@@ -161,7 +161,7 @@
     margin-bottom: 116px;
 }
 
-.service_title-box {
+.service-title-box {
     position: relative;
     display: flex;
     flex-direction: row-reverse;
@@ -179,13 +179,13 @@
     margin-right: auto;
 }
 
-.section-service .section-title_h3::after {
+.section-service .section-title-h3::after {
     height: 120px;
     top: -142px;
     left: 46px;
 }
 
-.service_title-img {
+.service-title-img {
     position: absolute;
     width: 280px;
     height: 180px;
@@ -195,23 +195,23 @@
     margin-top: min(3vw, 37px);
 }
 
-.section-service .section_text-box {
+.section-service .section-text-box {
     width: 66%;
 }
 
-.section-service .section_text-title {
+.section-service .section-text-title {
     width: 42%;
     max-width: 266px;
     margin-right: 10px;
 }
 
-.service_text-img1 {
+.service-text-img1 {
     width: 60%;
     max-width: 340px;
     aspect-ratio: 340/340;
 }
 
-.service_text-img2 {
+.service-text-img2 {
     position: absolute;
     width: 37%;
     max-width: 380px;
@@ -220,7 +220,7 @@
     bottom: -179px;
 }
 
-.service_text-img2 img {
+.service-text-img2 img {
     object-fit: cover;
 }
 
@@ -232,14 +232,14 @@
     margin: 0 auto;
 }
 
-.swiper-container_titlebox {
+.swiper-container-titlebox {
     width: 100%;
     max-width: 1080px;
     padding: 0 40px;
     margin: 0 auto 28px;
 }
 
-.swiper-container-parent .section_text-title {
+.swiper-container-parent .section-text-title {
     width: 100%;
     max-width: 1000px;
     padding-left: 429px;
@@ -287,7 +287,7 @@
     content: '';
 }
 
-.swiper_button-box {
+.swiper-button-box {
     width: 100%;
     max-width: 1080px;
     padding: 0 40px;
@@ -311,7 +311,7 @@
     margin: 0 auto 120px;
 }
 
-.recruit_img1 {
+.recruit-img1 {
     position: absolute;
     bottom: 213px;
     left: 40px;
@@ -340,11 +340,11 @@
     background-color: #FFFFFF;
 }
 
-.recruit-title-box .section-title-v .section-title_h2-v {
+.recruit-title-box .section-title-v .section-title-h2-v {
     margin-top: 26px;
 }
 
-.recruit-title-box .section-title-v .section-title_h3-v {
+.recruit-title-box .section-title-v .section-title-h3-v {
     margin-top: 21px;
 }
 
@@ -354,12 +354,12 @@
     margin-top: 92px;
 }
 
-.recruit-text_img {
+.recruit-text-img {
     width: 310px;
     height: 413px;
 }
 
-.recruit-text_img-sp {
+.recruit-text-img-sp {
     display: none;
 }
 
@@ -510,7 +510,7 @@
 
     /*------------------- ヘッダーＳＰ -----------------------*/
 
-    .header_background {
+    .header-background {
         height: 433px;
         bottom: 24px;
     }
@@ -524,16 +524,16 @@
         height: 100%;
     }
 
-    .header_background img {
+    .header-background img {
         aspect-ratio: 375/433;
     }
 
-    .header_main-title-inner {
+    .header-main-title-inner {
         width: 100%;
         margin-top: 67px;
     }
 
-    .header_main-title {
+    .header-main-title {
         font-size: 2rem;
         line-height: 39px;
         margin-left: 31px;
@@ -555,7 +555,7 @@
         margin-right: 0;
     }
 
-    .news-box_inner {
+    .news-box-inner {
         margin-bottom: 0;
         padding: 28px 24px 2px;
     }
@@ -587,7 +587,7 @@
         padding: 0 24px;
     }
 
-    .company_title-box {
+    .company-title-box {
         margin-bottom: 37px;
     }
 
@@ -595,7 +595,7 @@
         margin-right: 22px;
     }
 
-    .company_title-imgbox {
+    .company-title-imgbox {
         aspect-ratio: 253/292;
         background-image: url(../img/indexsp/company-img-sp.png);
     }
@@ -610,7 +610,7 @@
         line-height: 21.9px;
     }
 
-    .service_title-box {
+    .service-title-box {
         display: block;
         max-width: 648px;
         padding: 0 24px;
@@ -623,13 +623,13 @@
         margin-right: 0;
     }
 
-    .section-service .section-title_h3::after {
+    .section-service .section-title-h3::after {
         height: 80px;
         top: -99px;
         left: 34px;
     }
 
-    .service_title-img {
+    .service-title-img {
         position: static;
         width: 100%;
         max-width: initial;
@@ -638,21 +638,21 @@
         margin-top: 33px;
     }
 
-    .section-service .section_text-box {
+    .section-service .section-text-box {
         width: 100%;
     }
 
-    .section_text-box {
+    .section-text-box {
         display: block;
         margin-top: 51px;
     }
 
-    .section-service .section_text-title {
+    .section-service .section-text-title {
         width: 100%;
         max-width: 100%;
     }
 
-    .service_text-img1 {
+    .service-text-img1 {
         width: 100%;
         max-width: 100%;
         margin-top: 21px;
@@ -660,7 +660,7 @@
         aspect-ratio: 327/327;
     }
 
-    .service_text-img2 {
+    .service-text-img2 {
         position: static;
         width: 100%;
         max-width: 100%;
@@ -669,13 +669,13 @@
 
     /*- 建設事例とスワイパーＳＰ -*/
 
-    .swiper-container_titlebox {
+    .swiper-container-titlebox {
         max-width: 648px;
         padding: 0 24px;
         margin-bottom: 30px;
     }
 
-    .swiper-container-parent .section_text-title {
+    .swiper-container-parent .section-text-title {
         padding-left: 0;
     }
 
@@ -690,7 +690,7 @@
         min-height: 40px;
     }
 
-    .swiper_button-box {
+    .swiper-button-box {
         max-width: 648px;
         padding: 0 24px;
     }
@@ -717,7 +717,7 @@
         padding: 3px;
     }
 
-    .recruit_img1 {
+    .recruit-img1 {
         display: none;
     }
 
@@ -733,11 +733,11 @@
         aspect-ratio: 327/346;
     }
 
-    .recruit-text_img-pc {
+    .recruit-text-img-pc {
         display: none;
     }
 
-    .recruit-text_img-sp {
+    .recruit-text-img-sp {
         display: block;
     }
 

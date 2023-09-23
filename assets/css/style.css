@@ -190,7 +190,7 @@ p {
 
 /*- セクションのタイトル -*/
 
-.section-title_h3 {
+.section-title-h3 {
     position: relative;
     width: fit-content;
     font-size: 1.25rem;
@@ -199,7 +199,7 @@ p {
     letter-spacing: 2px;
 }
 
-.section-title_h3::after {
+.section-title-h3::after {
     position: absolute;
     content: '';
     top: -101px;
@@ -209,12 +209,12 @@ p {
     background-color: #E60012;
 }
 
-.news-box_inner .section-title_h3::after {
+.news-box-inner .section-title-h3::after {
     top: -92px;
     left: 43%;
 }
 
-.section-title_h2 {
+.section-title-h2 {
     font-size: 2.25rem;
     font-weight: bold;
     letter-spacing: 3.5px;
@@ -222,7 +222,7 @@ p {
 
 /*- セクションのサブタイトルとテキストＰＣ -*/
 
-.section_text-box {
+.section-text-box {
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -230,12 +230,12 @@ p {
     margin-top: 40px;
 }
 
-.section_text-title {
+.section-text-title {
     width: 100%;
     text-align: left;
 }
 
-.section_text-title h3,
+.section-text-title h3,
 .recruit-text-box h3 {
     margin-bottom: 10px;
     font-weight: bold;
@@ -259,7 +259,7 @@ header {
     height: 776px;
 }
 
-.header_menu-box {
+.header-menu-box {
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -275,7 +275,7 @@ header {
     height: 35px;
 }
 
-.header_menu-nav ul {
+.header-menu-nav ul {
     display: flex;
     width: 100%;
     margin-top: 103px;
@@ -285,34 +285,34 @@ header {
     display: none;
 }
 
-.header_menu-nav ul li {
+.header-menu-nav ul li {
     font-size: .875rem;
     margin-right: min(4.58vw, 64px);
     font-weight: bold;
 }
 
-.header_menu-nav ul li:nth-child(n+5) {
+.header-menu-nav ul li:nth-child(n+5) {
     margin-right: 0;
 }
 
-.header_menu-nav ul li a {
+.header-menu-nav ul li a {
     writing-mode: vertical-lr;
     -webkit-writing-mode: vertical-lr;
     -moz-writing-mode: vertical-lr;
     transition: all .3s;
 }
 
-.header_menu-nav ul li a:hover {
+.header-menu-nav ul li a:hover {
     color: #E60012;
     transition: all .3s;
 }
 
-.header_menu-nav ul li .adoption {
+.header-menu-nav ul li .adoption {
     position: relative;
     padding-bottom: 23px;
 }
 
-.header_menu-nav ul li .adoption::after {
+.header-menu-nav ul li .adoption::after {
     position: absolute;
     content: '';
     width: 13px;
@@ -326,7 +326,7 @@ header {
     z-index: 10;
 }
 
-.header_menu-nav ul li .adoption:hover.adoption::after {
+.header-menu-nav ul li .adoption:hover.adoption::after {
     background-image: url(../img/indexpc/icon-link-red.svg);
 }
 
@@ -355,7 +355,7 @@ header {
     display: none;
 }
 
-.header_contact-box {
+.header-contact-box {
     position: fixed;
     width: 34px;
     height: 126px;
@@ -373,11 +373,11 @@ header {
     opacity: 1;
 }
 
-.header_contact-box:hover {
+.header-contact-box:hover {
     width: 60px;
 }
 
-.header_contact-box a {
+.header-contact-box a {
     display: block;
     width: 100%;
     height: 100%;
@@ -386,7 +386,7 @@ header {
     transition: all .5s;
 }
 
-.header_contact-box a:hover {
+.header-contact-box a:hover {
     transition: all .5s;
     line-height: 60px;
 }
@@ -396,7 +396,7 @@ header {
     margin-bottom: 120px;
 }
 
-.header_background {
+.header-background {
     width: 100%;
     height: 320px;
     margin-top: 74px;
@@ -407,7 +407,7 @@ header {
     display: none;
 }
 
-.header_background img {
+.header-background img {
     object-fit: cover;
 }
 
@@ -468,7 +468,7 @@ header {
     writing-mode: vertical-rl;
 }
 
-.section-title_h2-v {
+.section-title-h2-v {
     position: relative;
     height: fit-content;
     margin-top: auto;
@@ -478,7 +478,7 @@ header {
     letter-spacing: 3.5px;
 }
 
-.section-title_h2-v::after {
+.section-title-h2-v::after {
     position: absolute;
     content: '';
     top: -145px;
@@ -488,7 +488,7 @@ header {
     background-color: #E60012;
 }
 
-.section-title_h3-v {
+.section-title-h3-v {
     height: fit-content;
     font-size: 1.25rem;
     font-weight: bold;
@@ -505,7 +505,7 @@ footer {
     border-top: 1px solid #E60012;
 }
 
-.footer_inner {
+.footer-inner {
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -518,57 +518,57 @@ footer .logo {
     margin-bottom: 32px;
 }
 
-.footer_access-text p {
+.footer-access-text p {
     line-height: 18px;
 }
 
-.footer_access-tel {
+.footer-access-tel {
     display: flex;
 }
 
-.footer_access-tel p:first-child {
+.footer-access-tel p:first-child {
     margin-right: 32px
 }
 
-.footer_menu nav {
+.footer-menu nav {
     display: flex;
     padding-top: 1px;
 }
 
-.footer_menu nav ul {
+.footer-menu nav ul {
     font-size: .875rem;
 }
 
-.footer_menu nav ul li {
+.footer-menu nav ul li {
     margin-right: 24px;
 }
 
-.footer_menu nav ul li a {
+.footer-menu nav ul li a {
     writing-mode: vertical-lr;
     -webkit-writing-mode: vertical-lr;
     -ms-writing-mode: vertical-lr;
 }
 
-.footer_menu nav ul li:last-child {
+.footer-menu nav ul li:last-child {
     margin-right: 0;
 }
 
-.footer_menu-first,
-.footer_menu-second {
+.footer-menu-first,
+.footer-menu-second {
     display: flex;
     justify-content: space-between;
 }
 
-.footer_menu-second {
+.footer-menu-second {
     margin-left: clamp(24px, 6.3vw, 88px);
 }
 
-.footer_menu-recruit {
+.footer-menu-recruit {
     position: relative;
     padding-bottom: 23px;
 }
 
-.footer_menu-recruit::after {
+.footer-menu-recruit::after {
     position: absolute;
     content: '';
     left: 1px;
@@ -580,7 +580,7 @@ footer .logo {
     background-size: 100%;
 }
 
-.footer_menu-recruit:hover:after {
+.footer-menu-recruit:hover:after {
     background-image: url(../img/indexpc/icon-link-red.svg);
     transition: all .3s;
 }
@@ -589,9 +589,9 @@ footer a {
     transition: all .3s;
 }
 
-.footer_menu a:hover,
-.footer_access-tel-number:hover,
-.footer_access-tel-mail:hover {
+.footer-menu a:hover,
+.footer-access-tel-number:hover,
+.footer-access-tel-mail:hover {
     color: #E60012;
     transition: all .3s;
 }
@@ -608,35 +608,35 @@ footer a {
 
     /*- セクションのタイトルＳＰ -*/
 
-    .section-title_h3 {
+    .section-title-h3 {
         letter-spacing: 1.5px;
         font-size: .875rem;
         margin-bottom: 14px;
     }
 
-    .section-title_h3::after {
+    .section-title-h3::after {
         top: -99px;
     }
 
-    .section-title_h2 {
+    .section-title-h2 {
         letter-spacing: 2.5px;
         font-size: 1.75rem;
     }
 
     /*- セクションのタイトル縦型ＳＰ -*/
 
-    .section-title_h2-v {
+    .section-title-h2-v {
         font-size: 1.75rem;
         margin-bottom: 0;
     }
 
-    .section-title_h2-v::after {
+    .section-title-h2-v::after {
         height: 80px;
         top: -98px;
         left: 13px;
     }
 
-    .section-title_h3-v {
+    .section-title-h3-v {
         letter-spacing: 1.5px;
         font-size: .875rem;
         margin-left: 10px;
@@ -665,7 +665,7 @@ footer a {
         height: 506px;
     }
 
-    .header_menu-box {
+    .header-menu-box {
         padding: 0 20px;
     }
 
@@ -673,7 +673,7 @@ footer a {
         height: 30px;
     }
 
-    .header_contact-box {
+    .header-contact-box {
         visibility: hidden;
         opacity: 0;
     }
@@ -688,13 +688,13 @@ footer a {
         height: 250px;
     }
 
-    .header-underlayer .header_background {
+    .header-underlayer .header-background {
         height: 250px;
         margin-top: 50px;
         margin-bottom: 55px;
     }
 
-    .header_menu-nav {
+    .header-menu-nav {
         position: fixed;
         top: 0;
         right: 0;
@@ -707,13 +707,13 @@ footer a {
         visibility: hidden;
     }
 
-    .header_menu-nav.open {
+    .header-menu-nav.open {
         opacity: 1;
         visibility: visible;
         transition: all .5s;
     }
 
-    .header_menu-nav ul {
+    .header-menu-nav ul {
         position: absolute;
         top: 0;
         right: 0;
@@ -735,7 +735,7 @@ footer a {
         transition: all .5s;
     }
 
-    .header_menu-nav ul li {
+    .header-menu-nav ul li {
         margin-bottom: 28px;
         margin-right: 0;
     }
@@ -744,15 +744,15 @@ footer a {
         display: block;
     }
 
-    .header_menu-nav ul li a {
+    .header-menu-nav ul li a {
         writing-mode: initial;
     }
 
-    .header_menu-nav ul li .adoption {
+    .header-menu-nav ul li .adoption {
         padding-bottom: 0;
     }
 
-    .header_menu-nav ul li .adoption::after {
+    .header-menu-nav ul li .adoption::after {
         right: -21px;
         bottom: 3px;
     }
@@ -813,14 +813,14 @@ footer a {
         padding-bottom: 19px;
     }
 
-    .footer_inner {
+    .footer-inner {
         flex-direction: column-reverse;
         max-width: 648px;
         padding: 0 24px;
         margin: 56px auto 74px;
     }
 
-    .footer_menu {
+    .footer-menu {
         margin-bottom: 38px;
     }
 
@@ -830,39 +830,39 @@ footer a {
         margin-bottom: 20px;
     }
 
-    .footer_access-text p {
+    .footer-access-text p {
         line-height: 19.5px;
     }
 
-    .footer_menu nav {
+    .footer-menu nav {
         flex-direction: column;
     }
 
-    .footer_menu nav ul li {
+    .footer-menu nav ul li {
         margin-bottom: 20px;
     }
 
-    .footer_menu nav ul li a {
+    .footer-menu nav ul li a {
         writing-mode: horizontal-tb;
         -webkit-writing-mode: horizontal-tb;
         -ms-writing-mode: horizontal-tb;
     }
 
-    .footer_menu-first,
-    .footer_menu-second {
+    .footer-menu-first,
+    .footer-menu-second {
         display: block;
     }
 
-    .footer_menu-second {
+    .footer-menu-second {
         margin-top: 40px;
         margin-left: 0;
     }
 
-    .footer_menu-recruit {
+    .footer-menu-recruit {
         padding-bottom: 0;
     }
 
-    .footer_menu-recruit::after {
+    .footer-menu-recruit::after {
         left: 64px;
         bottom: 3px;
 
@@ -873,11 +873,11 @@ footer a {
 
 @-moz-document url-prefix() {
 
-    .header_menu-nav ul li {
+    .header-menu-nav ul li {
         width: 14px;
     }
 
-    .footer_menu nav ul li {
+    .footer-menu nav ul li {
         width: 14px;
     }
 }
@@ -885,11 +885,11 @@ footer a {
 @media screen and (max-width: 768px) {
     @-moz-document url-prefix() {
 
-        .header_menu-nav ul li {
+        .header-menu-nav ul li {
             width: fit-content;
         }
 
-        .footer_menu nav ul li {
+        .footer-menu nav ul li {
             width: fit-content;
         }
     }
@@ -901,7 +901,7 @@ footer a {
 
     _::-webkit-full-page-media,
     _:future,
-    :root .header_menu-nav ul li .adoption::after {
+    :root .header-menu-nav ul li .adoption::after {
         bottom: 0px;
     }
 
@@ -922,7 +922,7 @@ footer a {
 
     _::-webkit-full-page-media,
     _:future,
-    :root .footer_menu-recruit::after {
+    :root .footer-menu-recruit::after {
         top: 2px;
     }
 }
